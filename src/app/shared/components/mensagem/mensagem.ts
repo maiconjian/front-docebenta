@@ -36,15 +36,6 @@ export class MensagemComponent implements OnInit {
   ngOnInit() {
   }
 
-  showTopCenter(msg: any, tipo: any) {
-    this.messageService.add({ key: 'tc', severity: tipo, summary: msg, detail: '' });
-  }
-
-  showConfirm(msg: any, detalhe: any) {
-    this.messageService.clear();
-    this.messageService.add({ key: 'c', sticky: true, severity: 'warn', summary: msg, detail: detalhe });
-  }
-
   onConfirm() {
     this.opcao.emit(1);
     this.messageService.clear('c');
