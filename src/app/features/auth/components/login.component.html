@@ -1,0 +1,19 @@
+<div class="ui-g">
+  <app-mensagem></app-mensagem>
+  <div class="ui-g-12 ui-sm-12">
+    <div class="login">
+      <img src="../../assets/imagens/imagem-user/user.png" class="usuario" width="100" height="100" alt="" />
+      <h1>Login</h1>
+      <form autocomplete="off" #f="ngForm" (ngSubmit)="autenticar()">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input pInputText type="text" name="login" placeholder="Insira seu nome de usuário" [(ngModel)]="login">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input pInputText type="password" name="senha" placeholder="Insira sua senha" [(ngModel)]="senha">
+        <input type="submit" name="entrar" value="Entrar" />
+        <div style="width: 100%; text-align: center;">
+          <label>Grupo Floripark - BI</label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

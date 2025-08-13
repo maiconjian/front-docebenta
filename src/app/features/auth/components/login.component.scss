@@ -1,0 +1,115 @@
+.ui-g {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+//   background: url(../../assets/imagens/imagem-fundo/fundo_login.png) no-repeat !important;
+  background-size: cover !important;
+  font-family: "Comfortaa", sans-serif !important;
+  position: absolute !important;
+}
+.usuario {
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 112px;
+}
+h1 {
+  margin: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 20px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Comfortaa", sans-serif !important;
+}
+.login {
+  width: 320px;
+  height: 420px;
+  border: 2px solid #000;
+  border: none;
+  border-radius: 80px 0px 80px 0px;
+  color: #fff;
+  background-color: rgba(0, 0, 5, 0.8);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 68px 28px;
+}
+.login i{
+  width: 26px;
+  float: left;
+  text-align: center;
+  margin-top: 9px !important;
+}
+.login p {
+  margin: 20px 0 0 0;
+  padding: 0;
+  font-weight: bold;
+}
+.login input {
+  width: 90%;
+  margin-bottom: 21px;
+  float: left;
+}
+.login input[type="text"], input[type="password"] {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  font-family: "Comfortaa", sans-serif !important;
+}
+.login input[type="password"]:hover {
+  border-bottom: 1px solid white;
+}
+.login input[type="submit"] {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  font-weight: bold;
+  color: #000;
+  background: #fff;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.login input[type="submit"]:hover {
+  cursor: pointer;
+ /* background: #ff4d4d;*/
+  background: #32cd32;
+  transition: 0.2s;
+  color: white;
+}
+.login label {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  color: #4b4b4b;
+  transition: 0.2s;
+}
+.login label:hover {
+  transition: 0.2s;
+  color: #fff;
+}
+.login a:hover {
+  transition: 0.2s;
+  color: #ff4d4d;
+}
+@media screen and (max-width: 568px) {
+  .ui-g{
+    // background: url(../../assets/imagens/imagem-fundo/fundo_login_app.png) no-repeat !important;
+    background-size: cover !important;
+  }
+  .login {
+    width: 300px;
+    height: 400px;
+  }
+}
